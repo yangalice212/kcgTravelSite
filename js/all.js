@@ -100,16 +100,18 @@ function showSelectData(e){
     e.preventDefault();
     showData = [];
     let zoneSelected = e.target.value;
-    document.querySelector('.zoneName').textContent = zoneSelected;
-    for(let i=0;i<originData.length;i++){
-        if(zoneSelected == '全部行政區'){
-            showData.push(originData[i]);
+    if(e.target.nodeName === 'INPUT' || e.target.nodeName === 'SELECT'){
+        document.querySelector('.zoneName').textContent = zoneSelected;
+        for(let i=0;i<originData.length;i++){
+            if(zoneSelected == '全部行政區'){
+                showData.push(originData[i]);
+            }
+            else if(zoneSelected == originData[i].Zone){
+                showData.push(originData[i]);
+            }
         }
-        else if(zoneSelected == originData[i].Zone){
-            showData.push(originData[i]);
-        }
+        pageSet(showData,1);
     }
-    pageSet(showData,1);
 }
 
 
