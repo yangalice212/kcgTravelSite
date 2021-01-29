@@ -123,7 +123,7 @@ function updateList(items){
         `
             <li>
                 <a href="${items[i].Website}" target="_blank">
-                    <div class="zoneImg d-flex ai-end jc-between" style="background: url(${items[i].Picture1});">
+                    <div class="zoneImg d-flex ai-end jc-between" style="background: url(${items[i].Picture1}) center center;">
                         <h4>${items[i].Name}</h4>
                         <h5>${items[i].Zone}</h5>
                     </div>
