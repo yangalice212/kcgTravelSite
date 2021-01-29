@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高雄旅遊資訊</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <section class="text-center">
+            <h1>高雄旅遊資訊</h1>
+            <select id="zoneSelect">
+                <option value="-- 請選擇行政區 --" selected disabled>-- 請選擇行政區 --</option>
+                <option value="全部行政區">全部行政區</option>
+            </select>
+        </section> 
+    </header>
+    <main>
+        <section class="hotZone">
+            <h2>熱門行政區</h2>
+            <div class="d-flex">
+                <input type="button" value="苓雅區">
+                <input type="button" value="三民區">
+                <input type="button" value="左營區">
+                <input type="button" value="鳳山區">
+            </div>   
+        </section>
+        <div class="border">
+            <i class="fas fa-caret-down"></i>
+        </div>
+
+        <h3 class="zoneName text-center">全部行政區</h3>
+
+        <ul class="zoneList d-flex flex-wrap">
+            
+        </ul>
+
+        <ul class="paginition d-flex jc-center ai-center">
+            <!-- <li class="prev"><a href="#">prev</a></li>
+            <li><a href="#">1</a></li>
+            <li class="next"><a href="#">next</a></li> -->
+        </ul>
+    </main>
+
+    <footer class="text-center">
+        <a href="index.html" class="kcgText">高雄旅遊網</a>
+        <p class="textStyle d-flex jc-center ai-center">資料來源：<a href="https://api.kcg.gov.tw" target="_blank">高雄市政府 </a></p>
+    </footer>
+
+    <script src="js/all.js"></script>
+</body>
+</html>

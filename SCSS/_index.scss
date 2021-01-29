@@ -1,0 +1,178 @@
+body{
+    background: #f6f6f6;
+}
+header{
+    background: url(../img/Hero.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    padding: 89px 0 107px;
+    h1{
+        font-size: 40px;
+        color: #FFFFFF;
+        letter-spacing: 3.89px;
+        margin-bottom: 96px;
+    }
+    select{
+        padding: 15px 9px;
+        color: black;
+        font-size: 18px;
+        width: 452px;
+        background: rgba(255,255,255,0.7);
+        border: 3px solid #FFFFFF;
+        border-radius: 3px;  
+    }
+}
+
+main{
+    max-width: 950px;
+    margin: 0 auto;
+    .hotZone{
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        top: -30px;
+        background: white;
+        padding: 20px 26px;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+        margin-bottom: 20px;
+        h2{
+            font-size: 18px;
+            margin-bottom: 14px;
+            font-weight: 400;
+        }
+        ul{
+            margin-left: 20px;
+        }
+        input{
+            color: white;
+            font-size: 20px;
+            padding: 11px 34px;
+            border: 0px;
+            border-radius: 5px;
+            margin-right: 23px;
+            cursor: pointer;
+            &[value="苓雅區"]{
+                background: #8A82CC;
+                &:hover{
+                    background: #473d9c;
+                }
+            }
+            &[value="三民區"]{
+                background: #FFA782;
+                &:hover{
+                    background: #dd6836;
+                }
+            }
+            &[value="左營區"]{
+                background: #F5D105;
+                &:hover{
+                    background: #e6c50d;
+                }
+            }
+            &[value="鳳山區"]{
+                background: #559AC8;
+                &:hover{
+                    background: #306d96;
+                }
+            }
+        }
+    }
+    .border{
+        border-top: 1px dashed #559AC8;
+        color: #559AC8;
+        position: relative;
+        margin-bottom: 76px;
+        i{
+            position: absolute;
+            top: -11px;
+            left: 50%;
+            border: 2px solid #559AC8;
+            border-radius: 50%;
+            padding: 2px 4px;
+            background: #f6f6f6;;
+        }
+    }
+    h3{
+        margin-bottom: 24px;
+        font-size: 36px;
+        color: #8A82CC;
+    }
+    .zoneList{
+        &>li{
+            margin: 0 8px 36px;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+            width: 48%;
+            background-color: white;
+        }
+        .zoneImg{
+            height: 155px;
+            color: white;
+            padding: 0 22px 14px;
+            h4{
+                font-size: 24px;
+            }
+        }
+        .zoneInfo{
+            padding: 20px 20px 7px;
+            li{
+                margin-bottom: 13px;
+                img{
+                    margin-right: 9px;
+                }
+            }
+        }
+    }
+
+    .paginition{
+        margin: 40px 0;
+        a{
+            color: #4A4A4A;
+            padding: 5px 8px;
+            &:hover{
+                color: black;
+                font-weight: 600;
+                transition: all 0.3s;
+            }
+        }
+        .active{
+            color: black;
+            font-weight: 600;
+            transform: translateY(-2px);
+        }
+        .prev{
+            margin-right: 26px;
+        }
+        .next{
+            margin-left: 18px;
+        }
+        li{
+            margin-right: 8px;
+        }
+        .disabled{
+            color: gray;
+        }
+    }
+}
+
+footer{
+    background: #559AC8;
+    padding: 24px 0;
+    font-size: 14px;
+    .kcgText{
+        margin-bottom: 14px;
+        color: white;
+        &:hover{
+            color: lightgray;
+        }
+    }
+    .textStyle{
+        color: #FFD366;
+        a{
+            color: inherit;
+            &:hover{
+                color: #fcc12d;
+            }
+        }
+    }
+}
